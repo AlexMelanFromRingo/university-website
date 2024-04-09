@@ -23,7 +23,7 @@ html,h1,h2,h3,h4,h5,h6,a{
 ::-webkit-scrollbar{width : 15px;  }
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: red;
+  background: #ababab;
   border-radius: 10px;
 }
 
