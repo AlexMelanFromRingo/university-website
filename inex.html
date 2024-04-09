@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Melan's bay</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+<!-- Navigation bar -->
+	<nav class="navbar navbar-expand-lg fixed-top">
+		<a class="navbar-brand" href="#" data-value="overlay">Вгору</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse " id="navbarSupportedContent">
+			<ul class="navbar-nav mr-4">
+				<li class="nav-item">
+					<a class="nav-link" data-value="about" href="#">Про мене</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" data-value="projects" href="#">Проєкти</a>
+				</li>
+                <li class="nav-item">
+                    <a class="nav-link" data-value="hobbies" href="#">Захоплення</a>
+                </li>
+			</ul>
+		</div>
+	</nav>
+
+<!-- Header -->
+    <header class="header">
+    	<div class="overlay" id="overlay"></div>
+    	<div class="container">
+    		<div class="description .text-center">
+    			<h3>
+    				<font color="#3AC1EF">▍ Ласкаво прошу на сайт Alex Melan
+                        <p>
+                            Я - починаючий розробник на таких мовах програмування, як: Python, Java, Lua, C++, GLSL, Processing.
+                            Якщо Вас зацікавило - запрошую передивитись усі розділи сайту для детальної інформації.
+                    </p>
+                        <button class="btn btn-outline-secondary" data-value="about" onclick="scrollToSection(this)">Докладніше</button>
+    				</font>
+    			</h3>
+    		</div>
+    	</div>
+    </header>
+
+<!-- About section -->
+    <div class="about" id="about">
+        <h1 class="text-center">Про мене</h1>
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <img align="center" src="images/MyPhoto2.webp" class="img-fluid">
+                <span class="text-justify">Це Я (●'◡'●) - Починаючий розробник</span>
+            </div>
+
+            <div class="col-lg-8 col-md-8 col-sm-12 desc">
+                <h3><font color="#3AC1EF">Alex Melan</font></h3>
+                <p>
+                    Ще з дитинства мені подобається комп'ютерна тематика. З часом, все більше мене поглинало ковиряння у комп'ютерних залізяках. У школі я почав вивчати програмування для саморозвитку, бо мені було цікаво почати писати якісь свої програми, ботів, скрипти, макроси й так далі. Далі мене почала цікавити тематика інформаційної безпеки, тож я почав вивчати основи криптології, вразливостей комп'ютерних систем та мереж, різні протоколи обміну даних й так далі.
+
+                    На даний момент, я вивчаю такі мови програмування, як:
+                </p>
+                <ol>
+                    <li>Python (боти, нейромережі, скрипти, автоматизація, парсери й так далі).</li>
+                    <li>C++ (Швидкі розрахунки).</li>
+                    <li>Java (Створення плагінів та модифікацій для гри, швидкі розрахунки й зручна робота з багатоядерними процесорами).</li>
+                    <li>Processing (Програмування мікроконтроллерів накшталт Arduino, ESP8266, тощо).</li>
+                    <li>Lua (для розробки маленьких вбудованих програм).</li>
+                    <li>GLSL для програм на GPU.</li>
+                    <li>Також трохи займаюсь моделюванням у Blender.</li>
+                </ol>
+                <p>
+                    Цікавлюсь роботую hash-функцій, алгоритмами роботи протоколу WPA-2, WPS, децентралізованими розрахунками, криптологією, нейромережами й новинами у сфері захисту інформації.
+                </p>
+            </div>
+        </div>
+    </div>
+
+<!-- Projects section -->
+    <div class="projects" id="projects">
+        <div class="container">
+            <h1 class="text-center">Проєкти</h1>
+            <div class="row">
+                <div class="col-md-4 col-lg-4 col-sm-12">
+                    <div class="card">
+                        <div class="card-img">
+                            <img align="center" src="images/projects/project_1.webp" class="img-fluid">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">CustomBIP32Utils</h4>
+                            <p class="card-text">
+                                Генерація ієрархічно-детермінованих гаманців за стандартами BIP32, BIP39, BIP44.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="pages/projects/project_1/project_1.html" class="card-link">Читати далі</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 col-sm-12">
+                    <div class="card">
+                        <div class="card-img">
+                            <img align="center" src="images/projects/project_2.webp" class="img-fluid">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Simple Authentication Plugin</h4>
+                            <p class="card-text">
+                                Простий та легкий paper плагін для аутентифікації на серверах.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="pages/projects/project_2/project_2.html" class="card-link">Читати далі</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 col-sm-12">
+                    <div class="card">
+                        <div class="card-img">
+                            <img align="center" src="images/projects/project_3.webp" class="img-fluid">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Пэтя Букало</h4>
+                            <p class="card-text">
+                                Самописний Discord бот, створений заради розваги, але, згодом, перетворений на помічника у модерації чату та серверу.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="pages/projects/project_3/project_3.html" class="card-link">Читати далі</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Hobbies Section -->
+    <div class="portfolio" id="hobbies">
+        <h1 class="text-center">Захоплення</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <img align="center" src="images/hobbies/photo_1.webp" class="img-fluid">
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <img align="center" src="images/hobbies/photo_2.webp" class="img-fluid">
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <img align="center" src="images/hobbies/photo_3.webp" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Footer section -->
+	<footer class="footer mt-auto py-3" style="background:#F97300;">
+	<div class="container">
+		<p class="text-center text-white lead">Copyright &copy; <script type="text/javascript">
+			document.write(new Date().getFullYear());
+		  </script> Alex Melan. All Rights Reserved.</p>
+	</div>
+  </footer>
+
+<!-- JS files -->
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- My custom JS -->
+    <script type="text/javascript" src='js/main.js'></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
