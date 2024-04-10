@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /
+Sitemap: https://alexmelanfromringo.github.io/university-website/sitemap.xml
