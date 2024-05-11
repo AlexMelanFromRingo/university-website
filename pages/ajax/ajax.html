@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ajax Demo</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="../../css/main.css">
+	<link rel="icon" href="../../images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+<!-- Navigation bar -->
+	<nav class="navbar navbar-expand-lg fixed-top">
+		<a class="navbar-brand" href="#" data-value="overlay">Вгору</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav mr-4">
+                <li class="nav-item">
+                    <a class="nav-link" href="../../index.html">На головну</a>
+                </li>
+            </ul>
+        </div>
+	</nav>
+
+<!-- Header -->
+    <header class="header">
+    	<div class="overlay" id="overlay"></div>
+    	<div class="container">
+    		<div class="description .text-center">
+    			<h3 class="blue-text">
+                    ▍ Сторінка для AJAX.
+                    <p>
+                        Сторінка для демонстрації технології AJAX.
+                    </p>
+                    <button class="btn btn-outline-secondary" onclick="location.href='../../index.html';">На головну</button>
+    			</h3>
+    		</div>
+    	</div>
+    </header>
+
+<!-- About section -->
+    <div class="about" id="about">
+        <div class="row text-center">
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <button class="myButton" data-file="1.html">1</button>
+                <br>
+                <button class="myButton" data-file="2.html">2</button>
+                <br>
+                <button class="myButton" data-file="3.html">3</button>
+                <br>
+                <button class="myButton" data-file="4.html">4</button>
+            </div>
+
+            <div class="col-lg-8 col-md-8 col-sm-12 desc">
+                <p>
+                    Проєкт трохи змінює бібліотеку BIP32Utils.py для роботи з моїм кодом. Адаптації спрямовані на використання функції SHA3-256 та SHA3-512 замість стандартних SHA2-256 та SHA2-512. Також змінені деякі змінні, які характерні для генерації Bitcoin адрес гаманців.
+                    <br>
+                    В цілому, проєкт являє собою бібліотеку для генерації ієрархічно-детермінованих гаманців за стандартами BIP32, BIP39, BIP44.
+                    <br>
+                    Розповсюджується за MIT ліцензією, але зараз знаходиться на етапі розробки, тож репозиторій знаходиться у закритому доступі.
+                </p>
+            </div>
+        </div>
+    </div>
+
+<!-- Footer section -->
+	<footer class="footer mt-auto py-3" style="background:#F97300;">
+	<div class="container">
+		<p class="text-center text-white lead">Copyright &copy; <script type="text/javascript">
+			document.write(new Date().getFullYear());
+		  </script> Alex Melan. All Rights Reserved.</p>
+	</div>
+  </footer>
+
+<!-- JS files -->
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- My custom JS -->
+    <script type="text/javascript" src='../../js/main.js'></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

@@ -14,3 +14,12 @@ function scrollToSection(element) {
     scrollTop: $('.' + sectionTo).offset().top
   }, 500);
 }
+
+$(document).ready(function(){
+    $(".myButton").click(function(){
+        var filename = $(this).data('file');
+        $.ajax({url: filename, success: function(result){
+            $("#content").html(result);
+        }});
+    });
+});
