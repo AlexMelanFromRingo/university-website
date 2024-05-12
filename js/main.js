@@ -26,8 +26,9 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     $("#loadData").click(function(){
+        var count = new URLSearchParams(window.location.search).get('count');
         $.ajax({
-            url: "http://localhost/data.php",
+            url: "http://localhost/project/data.php" + (count ? "?count=" + count : ""),
             type: "GET",
             success: function(result){
                 // Очищуємо таблицю, залишаючи тільки заголовок

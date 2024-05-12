@@ -236,3 +236,9 @@ html,h1,h2,h3,h4,h5,h6,a{
   line-height:2;
   color:#ababab;
 }
+
+/*Second task section*/
+.ajax-table{
+  margin: 10px;
+  background-color: #F97300;
+}
