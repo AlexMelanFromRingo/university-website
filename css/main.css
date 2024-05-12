@@ -53,7 +53,6 @@ html,h1,h2,h3,h4,h5,h6,a{
   color: #F97300;
 }
 
-
 /*Header style*/
 .header{
   background-image: url('../images/crystal.webp');
@@ -193,4 +192,47 @@ html,h1,h2,h3,h4,h5,h6,a{
 }
 .blue-text {
     color: #3AC1EF;
+}
+
+/*Ajax demo*/
+.myButton{
+  margin: 10px;
+  color: #fff;
+  background-color: #F97300;
+  width: 250px
+}
+.ajax-demo button:hover{
+  background: #fff;
+  color: #F97300;
+}
+.ajax-demo{
+  margin: 4em 0;
+  padding: 1em;
+  position: relative;
+}
+.ajax-demo h1{
+  color:#F97300;
+  margin: 2em;
+}
+.ajax-demo img{
+  height: 100%;
+  width: 100%;
+  border-radius: 50%
+}
+.ajax-demo span{
+  display: block;
+  color: #ababab;
+  position: absolute;
+  left: 260px;
+}
+.ajax-demo .desc{
+  padding: 2em;
+  border-left:4px solid #10828C;
+}
+.ajax-demo .desc h3{
+  color: #10828C;
+}
+.ajax-demo .desc p,ol{
+  line-height:2;
+  color:#ababab;
 }

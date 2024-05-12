@@ -44,17 +44,17 @@
     	</div>
     </header>
 
-<!-- About section -->
-    <div class="about" id="about">
+<!-- Ajax section -->
+    <div class="ajax-demo" id="ajax-demo">
         <div class="row text-center">
             <div class="col-lg-4 col-md-4 col-sm-12">
-                <button class="myButton" data-file="1.html">1</button>
+                <button class="myButton btn btn-outline-secondary" data-file="1.html">Читати українською мовою</button>
                 <br>
-                <button class="myButton" data-file="2.html">2</button>
+                <button class="myButton btn btn-outline-secondary" data-file="2.html">Читати англійською мовою</button>
                 <br>
-                <button class="myButton" data-file="3.html">3</button>
+                <button class="myButton btn btn-outline-secondary" data-file="3.html">Читати російською мовою</button>
                 <br>
-                <button class="myButton" data-file="4.html">4</button>
+                <button class="myButton btn btn-outline-secondary" data-file="4.html">Читати німецькою мовою</button>
             </div>
 
             <div class="col-lg-8 col-md-8 col-sm-12 desc">
@@ -68,6 +68,19 @@
             </div>
         </div>
     </div>
+
+<!-- PHP section -->
+<div>
+    <button id="loadData">Завантажити дані</button>
+    <table id="dataTable">
+        <tr>
+            <th>ID</th>
+            <th>Ім'я</th>
+            <th>Дата</th>
+        </tr>
+        <!-- Тут будуть рядки з даними -->
+    </table>
+</div>
 
 <!-- Footer section -->
 	<footer class="footer mt-auto py-3" style="background:#F97300;">
