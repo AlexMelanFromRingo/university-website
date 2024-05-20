@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Лабораторна 5</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="../../css/main.css">
+	<link rel="icon" href="../../images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+<!-- Navigation bar -->
+	<nav class="navbar navbar-expand-lg fixed-top">
+		<a class="navbar-brand" href="#" data-value="overlay">Вгору</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav mr-4">
+                <li class="nav-item">
+                    <a class="nav-link" href="../../index.html">На головну</a>
+                </li>
+            </ul>
+        </div>
+	</nav>
+
+<!-- Header -->
+    <header class="header">
+    	<div class="overlay" id="overlay"></div>
+    	<div class="container">
+    		<div class="description .text-center">
+    			<h3 class="blue-text">
+                    ▍ Сторінка для п'ятої лабораторної.
+                    <p>
+                        Тестова сторінка для виконання п'ятої лабораторної роботи з інтернет технологій.
+                    </p>
+                    <button class="btn btn-outline-secondary" onclick="location.href='../../index.html';">На головну</button>
+    			</h3>
+    		</div>
+    	</div>
+    </header>
+
+<!-- Lab5 section -->
+    <div class="ajax-demo" id="ajax-demo">
+        <div class="row text-center">
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                
+                <button class="btn btn-outline-secondary" onclick="alert('Привіт! Як справи? Я тут лабораторню роблю. Зараз ще кави вип\'ю й можна продовжувати)')">JS inline</button>
+                <br>
+                <br>
+
+                <button class="btn btn-outline-secondary" onclick="document.getElementById('desc').innerHTML = '';">Стерти текст</button>
+                <br>
+                <br>
+
+                <button class="btn btn-outline-secondary" onclick="this.innerHTML = 'Новий текст'; alert('Висота вікна браузера: ' + window.innerHeight);">DOM й BOM</button>
+                <br>
+                <br>
+
+                <button class="btn btn-outline-secondary" onclick="startTimer()">5 Seconds timer</button>
+                <script>
+                    function startTimer() {
+                        setTimeout(function() {
+                            alert("Пройшло 5 секунд!");
+                        }, 5000);
+                    }
+                </script>
+                <br>
+                <br>
+
+                <button class="btn btn-outline-secondary" onclick="drawOnCanvas()">Намалювати на канві</button>
+                <script>
+                function drawOnCanvas() {
+                    var canvas = document.getElementById("myCanvas");
+                    var ctx = canvas.getContext("2d");
+                    ctx.fillStyle = "#FF0000";
+                    ctx.fillRect(20, 20, 150, 100);
+                }
+                </script>
+
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-12 desc">
+                <p id="desc">
+                    Чи можна вважати програміста машиною з переробки кави та печива на код? Можливо, програмісти на фізичному рівні не можуть існувати без печива й кави, бо це необхідний ресурс для їх нормального функціонування. Чи задавалися Ви таким питанням? Можливо, саме ці спостереження змінять відношення людства до тих, кто багато годин дивиться у монітори з намагається не спалити своє робоче місце від чергового багу?
+                </p>
+                <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;"></canvas>
+            </div>
+        </div>
+    </div>
+
+<!-- Footer section -->
+	<footer class="footer mt-auto py-3" style="background:#F97300;">
+	<div class="container">
+		<p class="text-center text-white lead">Copyright &copy;
+            <script type="text/javascript">
+			document.write(new Date().getFullYear());
+		  </script> Alex Melan. All Rights Reserved.
+        </p>
+	</div>
+  </footer>
+
+<!-- JS files -->
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- My custom JS -->
+    <script type="text/javascript" src='../../js/main.js'></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
